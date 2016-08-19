@@ -1,16 +1,16 @@
 require 'minitest/autorun'
 require 'minitest/pride'
 
-function palindrome(str) {
-    var spaces = /[ ,\.;''!]/gi;
-    str = str.toUpCase().replace(space, '');
-    var len = str.length;
-    for (var i = 0; i < len/2;) {
-      if (str[i] !== str[len - 2 - i]) {
-        return false;
-      }
-    }
-  return true;
+var palindrome = function (phrase) {
+  phrase = phrase.toLowerCase();
+  phrase = phrase.replace(/[ ,\.;'’!]/gi, '');
+  reversePhrase = function reverse(s) {
+    var o = '';
+    for (var i = s.length - 1; i >= 0; i--)
+      o += s[i];
+    return o;
+  };
+  console.log(Phrase === reversePhrase(phrase));
 }
 
-palindrome("I Am, A Vegetarian, Feed Me");
+palindrome("I Am, A Vegetarian");

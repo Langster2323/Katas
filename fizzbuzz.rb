@@ -1,12 +1,9 @@
-class Fizzbuzz
-  def run(n)
-    {
-      return "fizzbuzz" if (n % 15).zero?
-      return "buzz" if (n % 5).zero?
-      return "fizz" if (n % 3).zero?
-
-    }
-
-    end
+def Fizzbuzz
+  case
+  when num % 15 == 0 then "FizzBuzz"
+  when num % 3 == 0 then "Fizz"
+  when num % 5 == 0 then "Buzz"
+  else
+    num
   end
 end
