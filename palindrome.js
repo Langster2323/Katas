@@ -10,7 +10,7 @@ var palindrome = function (phrase) {
       o += s[i];
     return o;
   };
-  console.log(Phrase === reversePhrase(phrase));
+  console.log(phrase === reversePhrase(phrase));
 }
 
 palindrome("I Am, A Vegetarian");
